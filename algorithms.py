@@ -37,7 +37,39 @@ class Regression():
         print(f'(The score of Decision tree regression is {r.Decision_Tree()})')
         print(f'(The score of Random Forest regression is {r.Randowm_Forest()})')
 
+
+class Classification():
+    def __init__(self,X_train,X_test,y_train,y_test):
+        self.X_train = X_train
+        self.X_test = X_test
+        self.y_train = y_train
+        self.y_test = y_test        
 ``
+    def logistic_reg():
+        from sklearn.linear_model import LogisticRegression
+        logistic = LogisticRegression()
+        logistic.fit(self.X_train, self.y_train)
+        return 
+
+    def support_vector():
+        
+
+    def naivebayes():
+        from sklearn.naive_bayes import GaussianNB
+        naive_bayes = GaussianNB()
+        naive_bayes.fit(self.X_train, self.y_train)
+        return 
+
+    def decision_tree():
+        pass
+
+    def random_forest():
+        pass
+
+    def k_nearest():
+        pass
+
+
 
 
         
